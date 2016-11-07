@@ -6,7 +6,7 @@
 /*   By: adu-pelo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/01 18:08:49 by adu-pelo          #+#    #+#             */
-/*   Updated: 2015/12/11 12:00:46 by adu-pelo         ###   ########.fr       */
+/*   Updated: 2016/11/07 12:39:32 by adu-pelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,5 +90,11 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstnew(void const *content, size_t content_size);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+size_t				ft_nbrlen_base(uintmax_t nb, unsigned int base);
+size_t				ft_nstrlen(char *s, unsigned int n);
+size_t				ft_nwstrlen(wchar_t *s, unsigned int len);
+void				ft_putnnbr(uintmax_t nb, unsigned int len);
+void				ft_putnnbr_base(uintmax_t nb, unsigned int len, unsigned int base);
+size_t				ft_wstrlen(wchar_t *s);
 
 #endif

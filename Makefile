@@ -6,7 +6,7 @@
 #    By: adu-pelo <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/01 18:10:51 by adu-pelo          #+#    #+#              #
-#    Updated: 2015/12/11 12:01:43 by adu-pelo         ###   ########.fr        #
+#    Updated: 2016/11/07 12:37:25 by adu-pelo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -90,7 +90,13 @@ SRC  = 	ft_atoi.c \
 		ft_strupcase.c \
 		ft_swap.c \
 		ft_tolower.c \
-		ft_toupper.c
+		ft_toupper.c \
+		ft_nbrlen_base.c \
+		ft_nstrlen.c \
+		ft_nwstrlen.c \
+		ft_putnnbr.c \
+		ft_putnnbr_base.c \
+		ft_wstrlen.c
 
 HFILES = $(patsubst %,$(HPATH)/%, $(HEADER))
 CFILES = $(patsubst %,$(CPATH)/%, $(SRC))

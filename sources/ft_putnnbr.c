@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_nstrlen.c                                       :+:      :+:    :+:   */
+/*   ft_putnnbr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adu-pelo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/10/18 16:44:48 by adu-pelo          #+#    #+#             */
-/*   Updated: 2016/10/18 17:38:57 by adu-pelo         ###   ########.fr       */
+/*   Created: 2016/10/10 16:37:56 by adu-pelo          #+#    #+#             */
+/*   Updated: 2016/11/07 12:34:03 by adu-pelo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdint.h>
 
-size_t	ft_nstrlen(char *s, unsigned int n)
+void	ft_putnnbr(uintmax_t nb, unsigned int len)
 {
-	size_t	i;
-
-	i = 0;
-	while (*s && i < n)
+	if (!len)
+		return ;
+	if (nb >= 10)
 	{
-		s++;
-		i++;
+		ft_putnnbr(nb / 10, len--);
+		ft_putchar((nb % 10) + '0');
 	}
-	return (i);
+	else
+		ft_putchar(nb + '0');
 }
