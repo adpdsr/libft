@@ -4,4 +4,4 @@
   
 ## Synopsis
   
-My C functions library, used for all my school projects written in C
+My C functions library, used in all my school projects written in C
