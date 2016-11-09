@@ -6,7 +6,7 @@
 #    By: adu-pelo <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/01 18:10:51 by adu-pelo          #+#    #+#              #
-#    Updated: 2016/11/07 12:37:25 by adu-pelo         ###   ########.fr        #
+#    Updated: 2016/11/09 12:46:23 by adu-pelo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,16 +14,16 @@ CPATH = sources
 HPATH = includes
 OPATH = .objects
 
-CC = /usr/bin/gcc
-MKDIR = /bin/mkdir
-RM = /bin/rm
-CFLAGS = -Wall -Wextra -Werror -I $(HPATH)
+RM		= /bin/rm
+CC		= /usr/bin/gcc
+MKDIR	= /bin/mkdir
+CFLAGS	= -Wall -Wextra -Werror -I $(HPATH)
 
-NAME = libft.a
-AR = /usr/bin/ar
-RANLIB = /usr/bin/ranlib
+NAME	= libft.a
+AR		= /usr/bin/ar
+RANLIB	= /usr/bin/ranlib
 
-HEADER = libft.h
+HEADER	= libft.h
 
 SRC  = 	ft_atoi.c \
 		ft_bzero.c \

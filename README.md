@@ -1,7 +1,7 @@
 #libft
   
-42 school project (Paris, France)
+Projet Ecole 42 (Paris)
   
-## Synopsis
+##Synopsis
   
-My C functions library, used in all my school projects written in C
+Ma propre librairie de fonctions C, utilisée dans tous mes projets écrits en C.
